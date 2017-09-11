@@ -12,3 +12,5 @@
 - CloudFlare (CDN pour les images) [https://cloudflare.com]
 - Frank McCown (Base du code de l'écran de veille) [https://www.harding.edu/fmccown/screensaver/screensaver.html]
 
+[![Contrat Creative Commons](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)  
+Ce(tte) création est mise à disposition selon les termes de la [Licence Creative Commons Paternité - Pas d'Utilisation Commerciale 4.0 International](http://creativecommons.org/licenses/by-nc/4.0/).

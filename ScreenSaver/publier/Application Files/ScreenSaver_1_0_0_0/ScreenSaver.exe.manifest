@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ScreenSaver.exe" version="1.0.0.0" publicKeyToken="e25c314025148b5b" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ScreenSaver" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ScreenSaver.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options du manifeste de contrôle de compte d'utilisateur
+          Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+          nœud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+         compatibilité descendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestSharp.dll" size="168960">
+      <assemblyIdentity name="RestSharp" version="105.2.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>cP9/KYDl3BOdsVswGl4omNgPSPw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScreenSaver.exe" size="15272">
+      <assemblyIdentity name="ScreenSaver" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ITxYa7/v5U61eCt4H2ECv0JPZO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=gilbert-PC\gilbert" issuerKeyHash="5055a5148f1b02cf59a145cb20f8e73edb83acdf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>FEm/C8gEmCzDtZ5StS1q04qfoyw=</DigestValue></Reference></SignedInfo><SignatureValue>YHhIvGQlu3VgYtSxin01JSzEjy+kVJz38LR+b6aLF36SK/c/iMdpvkY4Ed+ecedNH7pnd5k2droEdL32wIkmMqWuINUjQSONbft3yghuY6tp1kYttTJDjLQb3dsFAesjZiWrBT5Ei8irCld6BYfATIdowXrKS/ZonVIsMsMO5NE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xzZIjKTUTdmxThyLJg5dkT12ku7g1/8RcUkdy5surUZ1v2WWmEZkL8Gnutpc6QgewvhSMmtJfVg3rQJj4P6b1GQpu/Fz3PqOjWE+zTyOfql5UMVLjRgjGeTrbiIZVc1dfj75CyexD1POdI6+w5/hkcvgKG9LI99eP5sezlBx7Rs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2ca39f8ad36a2db5529eb5c32c9804c80bbf4914" Description="" Url=""><as:assemblyIdentity name="ScreenSaver.exe" version="1.0.0.0" publicKeyToken="e25c314025148b5b" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=gilbert-PC\gilbert</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>oMyWw4o6BI+ThzjMk4u9t8ySH5w=</DigestValue></Reference></SignedInfo><SignatureValue>lUf4vEAKK8fmyCyf7GTlVcWh0mqjbdfugz+T3JuJ3hjenNXjbXwuhYEBs0LvAv3CQ49P3mCaRA97/TfkpHyW+hRSLFYblGHv4GPf0w2yNUx4L1moIg5jdRwR/a06FSF7Syz1x+It2usd5xLfnkisLr0fJFzUlK0UHPjbxQXedwg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xzZIjKTUTdmxThyLJg5dkT12ku7g1/8RcUkdy5surUZ1v2WWmEZkL8Gnutpc6QgewvhSMmtJfVg3rQJj4P6b1GQpu/Fz3PqOjWE+zTyOfql5UMVLjRgjGeTrbiIZVc1dfj75CyexD1POdI6+w5/hkcvgKG9LI99eP5sezlBx7Rs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQO8YfLxGeArZMuvi+15V0nDANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQAZwBpAGwAYgBlAHIAdAAtAFAAQwBcAGcAaQBsAGIAZQByAHQwHhcNMTcwOTA5MDIyMjEyWhcNMTgwOTA5MDgyMjEyWjAvMS0wKwYDVQQDHiQAZwBpAGwAYgBlAHIAdAAtAFAAQwBcAGcAaQBsAGIAZQByAHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMc2SIyk1E3ZsU4ciyYOXZE9dpLu4Nf/EXFJHcubLq1Gdb9llphGZC/Bp7raXOkIHsL4UjJrSX1YN60CY+D+m9RkKbvxc9z6jo1hPs08jn6peVDFS40YIxnk624iGVXNXX4++QsnsQ9TznSOvsOf4ZHL4ChvSyPfXj+bHs5Qce0bAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAIro5uQIznIck729O0pDUSkdxWmCfAytX+sh0i2rBXVq+Rq0NNa/yH+w2nTL2oqUv6zJl0EDIF14k7Nqq3wuapDB6RoolCXLwh2NCiLlQgSVn7HL34obrYYOC2FYvxpdRiUB1eFbYjRrDBuWhpsMApsRkfu6uDSllsrjl54YvNJE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -34,13 +34,20 @@ namespace ScreenSaver
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ScreenSaverPixabay");
             if (key == null)
+            {
                 textBox.Text = "20";
+            }
             else
             {
-                if((string)key.GetValue("seconds") == "")
+                if ((string)key.GetValue("seconds") == "")
                     textBox.Text = "20";
                 else
                     textBox.Text = (string)key.GetValue("seconds");
+
+                if ((string)key.GetValue("editors_choice") == "")
+                    checkBoxEditorChoice.Checked = false;
+                else
+                    checkBoxEditorChoice.Checked = (string)key.GetValue("editors_choice") == "1" ? true : false;
             }
 
             if (key != null && key.GetValue("categories") != null)
@@ -71,6 +78,8 @@ namespace ScreenSaver
                 categories = categories + "|" + item.ToString();
             }
             key.SetValue("categories", categories.Substring(1));
+
+            key.SetValue("editors_choice", (checkBoxEditorChoice.Checked ? "1" : "0"));
 
         }
 

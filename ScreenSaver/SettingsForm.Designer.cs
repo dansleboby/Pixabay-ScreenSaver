@@ -34,6 +34,7 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxEditorChoice = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox
@@ -113,11 +114,22 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Catégorie d\'images";
             // 
+            // checkBoxEditorChoice
+            // 
+            this.checkBoxEditorChoice.AutoSize = true;
+            this.checkBoxEditorChoice.Location = new System.Drawing.Point(15, 28);
+            this.checkBoxEditorChoice.Name = "checkBoxEditorChoice";
+            this.checkBoxEditorChoice.Size = new System.Drawing.Size(164, 17);
+            this.checkBoxEditorChoice.TabIndex = 8;
+            this.checkBoxEditorChoice.Text = "Choix de l\'éditeur uniquement";
+            this.checkBoxEditorChoice.UseVisualStyleBackColor = true;
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(241, 409);
+            this.Controls.Add(this.checkBoxEditorChoice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.cancelButton);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBoxEditorChoice;
     }
 }

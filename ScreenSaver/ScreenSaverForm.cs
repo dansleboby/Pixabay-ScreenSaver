@@ -103,16 +103,18 @@ namespace ScreenSaver
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\ScreenSaverPixabay");
             string categories = "";
+            string editors_choice = "";
             if (key != null)
             {
                 categories = key.GetValue("categories").ToString();
+                editors_choice = key.GetValue("editors_choice").ToString();
             }
-            
+
             // Move text to new location   
-            var client = new RestClient("https://pixabay.gilbertpaquin.ca?categories=" + categories);
+            var client = new RestClient("http://pixabay.gilbertpaquin.ca?categories=" + categories + "&editors_choice=" + editors_choice);
             var request = new RestRequest(Method.GET);
             IRestResponse response = client.Execute(request);
-
+            
             String[] images = response.Content.Split('|');
 
             Random rnd = new Random();
